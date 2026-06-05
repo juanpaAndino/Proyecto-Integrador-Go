@@ -4,6 +4,7 @@ from pydantic import BaseModel
 from models import User
 from auth import hash_password, verify_password
 
+
 sqlite_file_name = "database.db"
 sqlite_url = f"sqlite:///{sqlite_file_name}"
 engine = create_engine(sqlite_url, connect_args={"check_same_thread": False})
